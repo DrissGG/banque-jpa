@@ -3,34 +3,25 @@
  */
 package fr.diginamic.model;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
  * @author driss
  *
  */
-@Entity
+@Embeddable
 public class Adresse {
-	@Id
-	private int id;
+	
 	
 	private int numero;
 	private String rue;
 	private int codePostal;
 	private String ville;
-	/** Getters
-	 * @return the id
-	 */
-	public int getId() {
-		return id;
-	}
-	/** Setters
-	 * @param id the id to set
-	 */
-	public void setId(int id) {
-		this.id = id;
-	}
+	
 	/** Getters
 	 * @return the numero
 	 */
